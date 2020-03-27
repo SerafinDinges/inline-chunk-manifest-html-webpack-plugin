@@ -83,7 +83,7 @@ class InlineChunkManifestHtmlWebpackPlugin {
       );
 
       compilation.plugin(
-        "html-webpack-plugin-before-html-generation",
+        "htmlWebpackPluginBeforeHtmlGeneration",
         (htmlPluginData, callback) => {
           const asset = compilation.assets[manifestFilename];
 
